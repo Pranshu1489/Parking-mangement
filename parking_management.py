@@ -11,7 +11,7 @@ def Add_Record():
                L.append(pname1)
                level1=input("Enter level of parking : ")
                L.append(level1)
-               freespace1=input("Is there any freespace or not :YES/NO ")
+               freespace1=input("Is there any free space available or not :YES/NO ")
                L.append(freespace1)
                vehicleno1=input("Enter the Vehicle Number : ")
                L.append(vehicleno1)
@@ -19,7 +19,7 @@ def Add_Record():
                L.append(vehmodel1)
                nod1=int(input("Enter total number of days for parking: "))
                L.append(nod1)
-               payment1=int(input("Enter total payment : "))
+               payment1=int(input("Enter total payable amount : "))
                L.append(payment1)
                stud=(L)
                sql="insert into parkmaster11 (pid1,pnm1,level1,freespace1,vehicleno1,vehmodel1,nod1,payment1) values (%s,%s,%s,%s,%s,%s,%s,%s)"
