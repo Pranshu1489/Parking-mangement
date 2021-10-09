@@ -1,7 +1,7 @@
 import os
 import platform
 import mysql.connector
-mydb=mysql.connector.connect(host="localhost",user="root",password=" 123456", database = "park")
+mydb=mysql.connector.connect(host="localhost",user="root",password="#Mrverma1489", database = "park")
 mycursor=mydb.cursor()
 def Add_Record():
                L=[]
@@ -133,10 +133,10 @@ def Menu():
                print("Enter7: To  View Vehicle List")
                print("Enter8 : To View All Details")
                
-               try: #Using Exceptions For Validation
-                              userInput = int(input("Please Select An Above Option: ")) #Will Take Input From User
+               try: 
+                              userInput = int(input("Please Select An Above Option: ")) 
                except ValueError:
-                              exit("\nHy! That's Not A Number") #Error Message
+                              exit("\nHy! That's Not A Number") 
                if(userInput==1):
                               db_mgmt( )
                if (userInput== 2):
